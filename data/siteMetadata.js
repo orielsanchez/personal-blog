@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'personal blog',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'orielsanchez.github.io',
+  siteUrl: 'https://orielsanchez.github.io/personal-blog/',
   siteRepo: 'https://github.com/orielsanchez/personal-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
