@@ -1,5 +1,2 @@
 # Personal Blog
-
-## Licence
-
-[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/main/LICENSE) © [Timothy Lin](https://www.timlrx.com)
+This is where I host my blog and portfolio.
