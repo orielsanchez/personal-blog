@@ -65,6 +65,8 @@ module.exports = () => {
     eslint: {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
+      basePath: "/personal-blog",
+      output: 'export',
     images: {
       remotePatterns: [
         {
@@ -73,14 +75,14 @@ module.exports = () => {
         },
       ],
     },
-    async headers() {
+    /* async headers() {
       return [
         {
           source: '/(.*)',
           headers: securityHeaders,
         },
       ]
-    },
+    }, */
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.svg$/,
