@@ -1,0 +1,113 @@
+---
+title: Toying with Ledger-CLI
+date: '2023-12-19'
+tags: ['ledger', 'double-entry accounting', 'vim']
+draft: false
+summary: A short intro to Ledger-CLI, a command-line accounting tool, by guiding beginners through its installation, basic features, and advanced functionalities, alongside practical tips for efficient financial management.
+---
+# Toying Around with Ledger-CLI
+
+Ledger-CLI, a powerful, text-based double-entry accounting system, offers a unique approach to managing finances. This blog post delves into the core features of Ledger-CLI, provides a hands-on guide for beginners, and explores advanced use-cases.
+
+## Introduction to Ledger-CLI
+
+Ledger-CLI stands out in the realm of accounting software due to its simplicity and flexibility. Built for the command-line enthusiast, it processes plain text files to manage financial data. Its appeal lies in its:
+
+- **Simplicity**: Plain text files are easy to create, read, and edit.
+- **Flexibility**: Customizable for various accounting needs.
+- **Portability**: Text files are compatible across different systems.
+
+## Getting Started with Ledger-CLI
+
+### Installation
+
+Installing Ledger-CLI varies depending on your operating system:
+
+- **Linux**: Use package managers like `apt` or `yum`.
+  
+  ```bash
+  sudo apt-get install ledger
+  ```
+
+- **macOS**: Use Homebrew.
+  
+  ```bash
+  brew install ledger
+  ```
+
+- **Windows**: Download binaries from the official website.
+
+### Creating Your First Ledger File
+
+A Ledger file is a plain text file. Here's a simple example:
+
+```ledger
+2023-01-01 Opening Balances
+    Assets:Checking          $1000
+    Equity:Opening Balances
+
+2023-01-02 Grocery Store
+    Expenses:Groceries        $50
+    Assets:Checking
+```
+
+### Basic Commands
+
+- **Balance**: Shows current balances of all accounts.
+
+  ```bash
+  ledger -f ledger_file.ledger balance
+  ```
+
+- **Register**: Lists all transactions for an account.
+
+  ```bash
+  ledger -f ledger_file.ledger register Expenses:Groceries
+  ```
+
+## Advanced Features
+
+### Automated Transactions
+
+You can define automated transactions for recurring expenses:
+
+```ledger
+= /Grocery Store/
+    Expenses:Groceries         $-10
+    Liabilities:CreditCard
+```
+
+### Budgeting
+
+Ledger-CLI supports budgeting:
+
+```ledger
+~ Monthly
+    Expenses:Rent              $500
+    Assets:Checking
+```
+
+### Reporting
+
+Advanced reporting options are available through custom commands, like monthly expenditure reports:
+
+```bash
+ledger -f ledger_file.ledger --monthly register Expenses
+```
+
+## Tips for Efficient Ledger-CLI Management
+
+- **Regular Updates**: Keep your ledger file up-to-date.
+- **Backup**: Regularly backup your ledger files.
+- **Version Control**: Use tools like Git for versioning.
+
+## Conclusion
+
+Ledger-CLI, while daunting at first, becomes a powerful tool in the hands of those willing to invest time in learning its intricacies. It empowers users with a deep understanding of their finances, tailored to their unique requirements. This post is just a starting point; the real journey begins with your first ledger file.
+
+## Resources
+
+- [Official Ledger-CLI Documentation](https://www.ledger-cli.org/docs.html)
+- [Ledger-CLI GitHub Repository](https://github.com/ledger/ledger)
+
+Dive into Ledger-CLI and discover the empowerment of managing finances through the command line!
