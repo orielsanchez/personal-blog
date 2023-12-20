@@ -3,29 +3,55 @@ title: Introduction to Sigma-Algebra: The Building Blocks of Modern Probability
 date: '2023-12-20'
 tags: ['sigma-algebra', 'probability', 'mathematics']
 draft: false
-summary: Sigma-algebras, vital in probability and measure theory, are mathematical structures that organize sets with specific properties to enable rigorous event analysis.
+summary: Sigma-algebras, vital in probability and measure theory, are 
+mathematical structures that organize sets with specific properties to enable 
+rigorous event analysis.
 ---
 ## Overview
 
-Sigma-algebras are pivotal in measure theory and probability, serving as the foundation for defining measures and integrating functions. They provide a structured approach to handling sets and form the cornerstone of modern probability theory.
+Sigma-algebras are pivotal in measure theory and probability, serving as the 
+foundation for defining measures and integrating functions. They provide a 
+structured approach to handling sets and form the cornerstone of modern probability theory.
 
 ## Defining Sigma-Algebra
 
 A **σ-algebra** is a collection of sets that adheres to three key properties:
 
-- **Inclusion of the Universal Set**: The collection **F** includes the universal set Ω, representing all possible outcomes in a probability space.
-- **Closed Under Complementation**: For any set *A* in **F**, its complement *A'* is also included.
-- **Closed Under Countable Unions**: If a series of sets *A₁, A₂, A₃, ...* are in **F**, their union *A₁ ∪ A₂ ∪ A₃ ∪ ...* is also part of **F**.
+```tex
+1. \text{Inclusion of the Universal Set}: \text{The collection } \mathcal{F} 
+\text{ includes the universal set } \Omega, \text{ representing all 
+possible outcomes in a probability space.}
+2. \text{Closed Under Complementation}: \text{For any set } A \text{ in } 
+\mathcal{F}, \text{ its complement } A' \text{ is also included.}
+3. \text{Closed Under Countable Unions}: \text{If a series of sets } A_1, 
+A_2, A_3, \ldots \text{ are in } \mathcal{F}, \text{ their union } A_1 \cup 
+A_2 \cup A_3 \cup \ldots \text{ is also part of } \mathcal{F}.
+```
 
 ## Importance in Probability Theory
 
-Sigma-algebras enable consistent and meaningful assignment of probabilities to events, forming the basis for probability spaces and the calculation of complex event probabilities.
+Sigma-algebras enable consistent and meaningful assignment of probabilities to 
+events, forming the basis for probability spaces and the calculation of 
+complex event probabilities.
 
 ## Practical Applications
 
-- **Trivial σ-Algebra**: Consists of only the universal set Ω and the empty set, indicating no uncertainty in events.
-- **Power Set σ-Algebra**: The set of all subsets of Ω, representing the theoretical extreme of σ-algebras.
+- **Trivial σ-Algebra**: Consists of only the universal set Ω and the empty 
+set, indicating no uncertainty in events.
+
+```tex
+\mathcal{F} = \{\emptyset, \Omega\}
+```
+
+- **Power Set σ-Algebra**: The set of all subsets of Ω, representing the 
+theoretical extreme of σ-algebras.
+
+```tex
+\mathcal{F} = \mathcal{P}(\Omega)
+```
 
 ## Conclusion
 
-Understanding sigma-algebras is crucial for advanced studies in probability and measure theory, offering a rigorous method for handling uncertainty and measurement in various mathematical contexts.
+Understanding sigma-algebras is crucial for advanced studies in probability 
+and measure theory, offering a rigorous method for handling uncertainty and 
+measurement in various mathematical contexts.
